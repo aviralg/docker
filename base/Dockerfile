@@ -16,7 +16,9 @@ RUN apt-get -y dist-upgrade
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qy install \
     sudo                                               \
     apt-utils                                          \
-    debian-keyring
+    debian-keyring                                     \
+    curl                                               \
+    wget
 
 ################################################################################
 ## Locale
